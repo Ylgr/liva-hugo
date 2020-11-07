@@ -20,8 +20,11 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="{{ .Site.BaseURL }}"><img class="img-fluid"
-            src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
+        <a class="navbar-brand mx-auto desktop-view" href="{{ .Site.BaseURL }}">
+          <!-- <img class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> -->
+          <img class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" height="150"
+          width="150">
+        </a>
 
         <ul class="navbar-nav">
           {{ range .Site.Menus.main }}
